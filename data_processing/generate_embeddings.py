@@ -6,7 +6,6 @@ are stored in the 'dataset/dataset_embeddings.csv' file.
 To execute the script, use the following command from the root folder:
 `python data_processing/generate_embeddings.py`
 
-Author: Foteini Savvidou (GitHub @sfoteini)
 """
 
 import os
@@ -60,7 +59,6 @@ def main():
 
     # Save the final dataset
     generate_dataset()
-
 
 def load_image_filenames() -> list[str]:
     """

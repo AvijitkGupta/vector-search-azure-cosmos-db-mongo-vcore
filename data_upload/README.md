@@ -1,4 +1,4 @@
-# Insert data to Azure Cosmos DB for PostgreSQL
+# Insert data to Azure Cosmos DB for Mongo vcore
 
 ## Upload images to Azure Blob Storage
 
@@ -16,16 +16,16 @@ The process of uploading the images to Azure Blob Storage can be summarized as f
 
 3. Upload the images in the container, utilizing multiple threads via the `ThreadPoolExecutor` class.
 
-## Insert data to Azure Cosmos DB for PostgreSQL table
+## Insert data to Azure Cosmos DB for Mongo vcore collection
 
-The *[upload_data_to_postgresql.py](upload_data_to_postgresql.py)* creates a new table in your Azure Cosmos DB for PostgreSQL cluster and populates it with data. To execute the script, use the following command from the root folder:
+The *[upload_data_to_Mongovcore.py](upload_data_to_Mongovcore.py)* creates a new collection in your Azure Cosmos DB for Mongo vcore instance and populates it with data. To execute the script, use the following command from the root folder:
 
 ```bash
-python data_upload/upload_data_to_postgresql.py
+python data_upload/upload_data_to_Mongovcore.py
 ```
 
-To insert data into an Azure Cosmos DB for PostgreSQL table, we will proceed as follows:
+To insert data into an Azure Cosmos DB for Mongo vcore collection, we will proceed as follows:
 
 1. Create a table to store the filenames of the images, their embeddings, and their associated metadata. All information is saved in the CSV file created in *[data_processing/generate_embeddings.py](../data_processing/generate_embeddings.py)*.
 
-2. Insert the data from the CSV file into the table using the PostgreSQL `COPY` command.
+2. Insert the data from the CSV file into the collection.
