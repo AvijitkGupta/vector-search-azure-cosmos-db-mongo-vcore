@@ -12,9 +12,9 @@ In the *[data_preprocessing.ipynb](data_preprocessing.ipynb)* Jupyter Notebook, 
 
 2. Clean up the names of the artists, addressing encoding issues for some artists' names.
 
-3. Exclude artists with fewer than 15 paintings from the dataset, along with other data we won't be using.
+3. Exclude artists with more than 9 paintings and less than 6 paintings from the dataset, along with other data we won't be using.
 
-After these steps, the final dataset will comprise 11,206 images of paintings.
+After these steps, the final dataset will comprise 1343 images of paintings.
 
 ## Vector Embeddings Generation
 
