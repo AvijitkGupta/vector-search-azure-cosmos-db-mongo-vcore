@@ -1,3 +1,4 @@
+
 # Image similarity search on Azure Cosmos DB for MongoDB vcore
 
 This project demonstrates the creation of an image similarity search application utilizing Azure Cosmos DB for MongoDB vcore as a vector database and Azure AI Vision for generating embeddings. It serves as a starting point that can be used for the development of more sophisticated vector search solutions.
@@ -15,6 +16,7 @@ Before you start, ensure that you have the following prerequisites installed and
     > The multi-modal embeddings APIs are available in the following regions: East US, France Central, Korea Central, North Europe, Southeast Asia, West Europe, West US.
 
 * An Azure Storage account - [Create an Azure Storage account using the Azure CLI](https://learn.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-cli?WT.mc_id=AI-MVP-5004971).
+
 
 * An Azure Cosmos DB for Mongo vcore cluster - [Create an Azure Cosmos DB for MongoDB vcore in the Azure portal](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/vcore/quickstart-portal)
 
@@ -47,6 +49,5 @@ Before running the Python scripts and Jupyter Notebooks, you should:
 | [Upload images to Azure Blob Storage](data_upload/upload_images_to_blob.py) | Creates an Azure Blob Storage container and uploads the paintings' images. |
 | [Insert data to Azure Cosmos DB for Mongo vcore](data_upload/upload_data_to_postgresql.py) | Creates a table in the Azure Cosmos DB for PostgreSQL cluster and populates it with data from the dataset. |
 | [Exact nearest neighbor search with pgvector](vector_search_samples/image_search.ipynb) | Demonstrates text-to-image and image-to-image search approaches, along with a simple method for metadata filtering. |
-
 
 *Feel free to experiment with the project and modify the code to meet your specific use cases and requirements!*
