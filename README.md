@@ -48,6 +48,6 @@ Before running the Python scripts and Jupyter Notebooks, you should:
 | [Embeddings Generation](data_processing/generate_embeddings.py) | Generates vector embeddings for the images in the dataset using the Azure AI Vision Vectorize Image API and creates the final dataset that is utilized in the image search application. |
 | [Upload images to Azure Blob Storage](data_upload/upload_images_to_blob.py) | Creates an Azure Blob Storage container and uploads the paintings' images. |
 | [Insert data to Azure Cosmos DB for Mongo vcore](data_upload/upload_data_to_postgresql.py) | Creates a table in the Azure Cosmos DB for MongoDb vcore cluster and populates it with data from the dataset. |
-| [Exact nearest neighbor search with pgvector](vector_search_samples/image_search.ipynb) | Demonstrates text-to-image and image-to-image search approaches, along with a simple method for metadata filtering. |
+| [Exact nearest neighbor search](vector_search_samples/image_search.ipynb) | Demonstrates text-to-image and image-to-image search approaches, along with a simple method for metadata filtering. |
 
 *Feel free to experiment with the project and modify the code to meet your specific use cases and requirements!*
